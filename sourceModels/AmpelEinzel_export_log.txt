@@ -1,0 +1,442 @@
+i3dio.exporter:export_blend_to_i3d:INFO: Blender version is: 2.93.9
+i3dio.exporter:export_blend_to_i3d:INFO: I3D Exporter version is: 4.1.1
+i3dio.exporter:export_blend_to_i3d:INFO: Exported using 'lxml'
+i3dio.exporter:export_blend_to_i3d:INFO: Exporting to D:\Achim\source\repos\FS22_BurgWilhelmstein\sourceModels\Ampel\AmpelEinzel.i3d
+i3dio.exporter:_export_active_collection:INFO: 'Active collection' export is selected
+i3dio.exporter:_add_object_to_i3d:DEBUG: [trafficLight] is of type 'EMPTY'
+i3dio.node_classes.node.TransformGroupNode:_create_xml_element:DEBUG: [trafficLight] Filling out basic attributes, {name='trafficLight', nodeId='1'}
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.node_classes.node.TransformGroupNode:_write_properties:DEBUG: [trafficLight] Has no data specific attributes
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [trafficLight] transforming to new transform-basis with <Matrix 4x4 (1.0000, 0.0000, 0.0000, 0.0000)
+            (0.0000, 1.0000, 0.0000, 0.0000)
+            (0.0000, 0.0000, 1.0000, 0.0000)
+            (0.0000, 0.0000, 0.0000, 1.0000)>
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [trafficLight] translation is <Vector (0.0000, 0.0000, 0.0000)>
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [trafficLight] translation is default
+i3dio.node_classes.node.TransformGroupNode:__init__:DEBUG: [trafficLight] Initialized as a 'TransformGroupNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [trafficLight] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [1collision] is of type 'EMPTY'
+i3dio.node_classes.node.TransformGroupNode:_create_xml_element:DEBUG: [1collision] Filling out basic attributes, {name='1collision', nodeId='2'}
+i3dio.node_classes.node.TransformGroupNode:_create_xml_element:DEBUG: [1collision] has parent element with name [trafficLight]
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.node_classes.node.TransformGroupNode:_write_properties:DEBUG: [1collision] Has no data specific attributes
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [1collision] transforming to new transform-basis with <Matrix 4x4 (1.0000, 0.0000, 0.0000, 0.0000)
+            (0.0000, 1.0000, 0.0000, 2.4000)
+            (0.0000, 0.0000, 1.0000, 0.0000)
+            (0.0000, 0.0000, 0.0000, 1.0000)>
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [1collision] translation is <Vector (0.0000, 2.4000, 0.0000)>
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [1collision] has translation: [0 2.4 0]
+i3dio.node_classes.node.TransformGroupNode:__init__:DEBUG: [1collision] Initialized as a 'TransformGroupNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [1collision] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [Cylinder] is of type 'MESH'
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [Cylinder] Filling out basic attributes, {name='Cylinder', nodeId='3'}
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [Cylinder] has parent element with name [1collision]
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cylinder.003] is exported with modifiers applied
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cylinder.003] applying unit scaling
+i3dio.node_classes.node.IndexedTriangleSet:_create_xml_element:DEBUG: [Cylinder.003] Filling out basic attributes, {name='Cylinder.003', nodeId='1'}
+i3dio.node_classes.node.IndexedTriangleSet:populate_from_evaluated_mesh:INFO: [Cylinder.003] Has material 'pole_mat'
+i3dio.i3d.I3D:add_material:DEBUG: [AmpelEinzel] New Material
+i3dio.node_classes.node.Material:_create_xml_element:DEBUG: [pole_mat] Filling out basic attributes, {name='pole_mat', nodeId='1'}
+i3dio.node_classes.node.Material:_normal_from_nodes:DEBUG: [pole_mat] Has no Normalmap
+i3dio.node_classes.node.Material:_emissive_from_nodes:DEBUG: [pole_mat] Has no Emissivemap
+i3dio.node_classes.node.Material:_resolve_with_nodes:DEBUG: [pole_mat] Has no Glossmap
+i3dio.i3d.I3D:add_file:DEBUG: [AmpelEinzel] New File
+i3dio.utility:as_fs_relative_path:DEBUG: Original filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shaders\vehicleShader.xml
+i3dio.utility:as_fs_relative_path:DEBUG: Cleaned filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shaders\vehicleShader.xml
+i3dio.utility:as_fs_relative_path:DEBUG: FS data path: E:\Program Files (x86)\Farming Simulator 2022\data
+i3dio.utility:as_fs_relative_path:DEBUG: Fs relative path: $data\shaders\vehicleShader.xml
+i3dio.node_classes.file.Shader:_resolve_filepath:INFO: [vehicleShader.xml] Resolved filepath: $data\shaders\vehicleShader.xml
+i3dio.node_classes.file.Shader:_create_xml_element:DEBUG: [vehicleShader.xml] Filling out basic attributes, {name='$data/shaders/vehicleShader.xml', nodeId='1'}
+i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [pole_mat] Texture: '../shared/detailArray_specular.png', default: ../shared/detailArray_specular.png
+i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [pole_mat] Texture: '../shared/detailArray_normal.png', default: ../shared/detailArray_normal.png
+i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [pole_mat] Texture: '../shared/detailArray_diffuse.png', default: ../shared/detailArray_diffuse.png
+i3dio.node_classes.node.IndexedTriangleSet:process_subsets:DEBUG: [Cylinder.003] Subset with index [0] based on material 'pole_mat'
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cylinder.003] Processing subset: materialId="1" numTriangles="124" firstIndex="0" firstVertex="0" numIndices="0" numVertices="0"
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cylinder.003] Has subset 'pole_mat' with '124' triangles and materialId="1" numTriangles="124" firstIndex="0" firstVertex="0" numIndices="372" numVertices="130"
+i3dio.node_classes.node.IndexedTriangleSet:populate_xml_element:DEBUG: [Cylinder.003] Has '1' subsets, '124' triangles and '130' vertices
+i3dio.node_classes.node.ShapeNode:populate_xml_element:DEBUG: [Cylinder] has shape ID '1'
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'rigid_body_type' with value 'static'. Default is 'none'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '1' properties
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeShapeAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cylinder] transforming to new transform-basis with <Matrix 4x4 (1.0000, 0.0000, 0.0000,  0.0000)
+            (0.0000, 1.0000, 0.0000, -1.4000)
+            (0.0000, 0.0000, 1.0000,  0.0000)
+            (0.0000, 0.0000, 0.0000,  1.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cylinder] translation is <Vector (0.0000, -1.4000, 0.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cylinder] has translation: [0 -1.4 0]
+i3dio.node_classes.node.ShapeNode:__init__:DEBUG: [Cylinder] Initialized as a 'ShapeNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [Cylinder] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [Cylinder] no more children to process in object
+i3dio.exporter:_add_object_to_i3d:DEBUG: [box_green] is of type 'MESH'
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [box_green] Filling out basic attributes, {name='box_green', nodeId='4'}
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [box_green] has parent element with name [1collision]
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cube.003] is exported with modifiers applied
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cube.003] applying unit scaling
+i3dio.node_classes.node.IndexedTriangleSet:_create_xml_element:DEBUG: [Cube.003] Filling out basic attributes, {name='Cube.003', nodeId='2'}
+i3dio.node_classes.node.IndexedTriangleSet:populate_from_evaluated_mesh:INFO: [Cube.003] Has material 'plastic_mat'
+i3dio.i3d.I3D:add_material:DEBUG: [AmpelEinzel] New Material
+i3dio.node_classes.node.Material:_create_xml_element:DEBUG: [plastic_mat] Filling out basic attributes, {name='plastic_mat', nodeId='2'}
+i3dio.node_classes.node.Material:_normal_from_nodes:DEBUG: [plastic_mat] Has no Normalmap
+i3dio.node_classes.node.Material:_emissive_from_nodes:DEBUG: [plastic_mat] Has no Emissivemap
+i3dio.node_classes.node.Material:_resolve_with_nodes:DEBUG: [plastic_mat] Has no Glossmap
+i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [plastic_mat] Texture: '../shared/detailArray_specular.png', default: ../shared/detailArray_specular.png
+i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [plastic_mat] Texture: '../shared/detailArray_normal.png', default: ../shared/detailArray_normal.png
+i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [plastic_mat] Texture: '../shared/detailArray_diffuse.png', default: ../shared/detailArray_diffuse.png
+i3dio.node_classes.node.IndexedTriangleSet:process_subsets:DEBUG: [Cube.003] Subset with index [0] based on material 'plastic_mat'
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cube.003] Processing subset: materialId="2" numTriangles="976" firstIndex="0" firstVertex="0" numIndices="0" numVertices="0"
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cube.003] Has subset 'plastic_mat' with '976' triangles and materialId="2" numTriangles="976" firstIndex="0" firstVertex="0" numIndices="2928" numVertices="717"
+i3dio.node_classes.node.IndexedTriangleSet:populate_xml_element:DEBUG: [Cube.003] Has '1' subsets, '976' triangles and '717' vertices
+i3dio.node_classes.node.ShapeNode:populate_xml_element:DEBUG: [box_green] has shape ID '2'
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'rigid_body_type' with value 'static'. Default is 'none'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '1' properties
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeShapeAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [box_green] transforming to new transform-basis with <Matrix 4x4 (1.0000, 0.0000, 0.0000,  0.0000)
+            (0.0000, 1.0000, 0.0000, -0.2680)
+            (0.0000, 0.0000, 1.0000,  0.0000)
+            (0.0000, 0.0000, 0.0000,  1.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [box_green] translation is <Vector (0.0000, -0.2680, 0.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [box_green] has translation: [0 -0.268 0]
+i3dio.node_classes.node.ShapeNode:__init__:DEBUG: [box_green] Initialized as a 'ShapeNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [box_green] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [box_green] no more children to process in object
+i3dio.exporter:_add_object_to_i3d:DEBUG: [box_red] is of type 'MESH'
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [box_red] Filling out basic attributes, {name='box_red', nodeId='5'}
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [box_red] has parent element with name [1collision]
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cube.002] is exported with modifiers applied
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cube.002] applying unit scaling
+i3dio.node_classes.node.IndexedTriangleSet:_create_xml_element:DEBUG: [Cube.002] Filling out basic attributes, {name='Cube.002', nodeId='3'}
+i3dio.node_classes.node.IndexedTriangleSet:populate_from_evaluated_mesh:INFO: [Cube.002] Has material 'plastic_mat'
+i3dio.node_classes.node.IndexedTriangleSet:process_subsets:DEBUG: [Cube.002] Subset with index [0] based on material 'plastic_mat'
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cube.002] Processing subset: materialId="2" numTriangles="976" firstIndex="0" firstVertex="0" numIndices="0" numVertices="0"
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cube.002] Has subset 'plastic_mat' with '976' triangles and materialId="2" numTriangles="976" firstIndex="0" firstVertex="0" numIndices="2928" numVertices="717"
+i3dio.node_classes.node.IndexedTriangleSet:populate_xml_element:DEBUG: [Cube.002] Has '1' subsets, '976' triangles and '717' vertices
+i3dio.node_classes.node.ShapeNode:populate_xml_element:DEBUG: [box_red] has shape ID '3'
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'rigid_body_type' with value 'static'. Default is 'none'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '1' properties
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeShapeAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [box_red] transforming to new transform-basis with <Matrix 4x4 (1.0000, 0.0000, 0.0000, 0.0000)
+            (0.0000, 1.0000, 0.0000, 0.2680)
+            (0.0000, 0.0000, 1.0000, 0.0000)
+            (0.0000, 0.0000, 0.0000, 1.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [box_red] translation is <Vector (0.0000, 0.2680, 0.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [box_red] has translation: [0 0.268 0]
+i3dio.node_classes.node.ShapeNode:__init__:DEBUG: [box_red] Initialized as a 'ShapeNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [box_red] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [box_red] no more children to process in object
+i3dio.exporter:_add_object_to_i3d:DEBUG: [box_yellow] is of type 'MESH'
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [box_yellow] Filling out basic attributes, {name='box_yellow', nodeId='6'}
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [box_yellow] has parent element with name [1collision]
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cube.001] is exported with modifiers applied
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cube.001] applying unit scaling
+i3dio.node_classes.node.IndexedTriangleSet:_create_xml_element:DEBUG: [Cube.001] Filling out basic attributes, {name='Cube.001', nodeId='4'}
+i3dio.node_classes.node.IndexedTriangleSet:populate_from_evaluated_mesh:INFO: [Cube.001] Has material 'plastic_mat'
+i3dio.node_classes.node.IndexedTriangleSet:process_subsets:DEBUG: [Cube.001] Subset with index [0] based on material 'plastic_mat'
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cube.001] Processing subset: materialId="2" numTriangles="976" firstIndex="0" firstVertex="0" numIndices="0" numVertices="0"
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cube.001] Has subset 'plastic_mat' with '976' triangles and materialId="2" numTriangles="976" firstIndex="0" firstVertex="0" numIndices="2928" numVertices="717"
+i3dio.node_classes.node.IndexedTriangleSet:populate_xml_element:DEBUG: [Cube.001] Has '1' subsets, '976' triangles and '717' vertices
+i3dio.node_classes.node.ShapeNode:populate_xml_element:DEBUG: [box_yellow] has shape ID '4'
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'rigid_body_type' with value 'static'. Default is 'none'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '1' properties
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeShapeAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [box_yellow] transforming to new transform-basis with <Matrix 4x4 (1.0000, 0.0000, 0.0000, 0.0000)
+            (0.0000, 1.0000, 0.0000, 0.0000)
+            (0.0000, 0.0000, 1.0000, 0.0000)
+            (0.0000, 0.0000, 0.0000, 1.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [box_yellow] translation is <Vector (0.0000, 0.0000, 0.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [box_yellow] translation is default
+i3dio.node_classes.node.ShapeNode:__init__:DEBUG: [box_yellow] Initialized as a 'ShapeNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [box_yellow] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [box_yellow] no more children to process in object
+i3dio.exporter:_add_object_to_i3d:DEBUG: [1collision] no more children to process in object
+i3dio.exporter:_add_object_to_i3d:DEBUG: [2lights] is of type 'EMPTY'
+i3dio.node_classes.node.TransformGroupNode:_create_xml_element:DEBUG: [2lights] Filling out basic attributes, {name='2lights', nodeId='7'}
+i3dio.node_classes.node.TransformGroupNode:_create_xml_element:DEBUG: [2lights] has parent element with name [trafficLight]
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.node_classes.node.TransformGroupNode:_write_properties:DEBUG: [2lights] Has no data specific attributes
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [2lights] transforming to new transform-basis with <Matrix 4x4 (1.0000, 0.0000, 0.0000, 0.0000)
+            (0.0000, 1.0000, 0.0000, 2.4000)
+            (0.0000, 0.0000, 1.0000, 0.0000)
+            (0.0000, 0.0000, 0.0000, 1.0000)>
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [2lights] translation is <Vector (0.0000, 2.4000, 0.0000)>
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [2lights] has translation: [0 2.4 0]
+i3dio.node_classes.node.TransformGroupNode:__init__:DEBUG: [2lights] Initialized as a 'TransformGroupNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [2lights] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [1red] is of type 'EMPTY'
+i3dio.node_classes.node.TransformGroupNode:_create_xml_element:DEBUG: [1red] Filling out basic attributes, {name='1red', nodeId='8'}
+i3dio.node_classes.node.TransformGroupNode:_create_xml_element:DEBUG: [1red] has parent element with name [2lights]
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.node_classes.node.TransformGroupNode:_write_properties:DEBUG: [1red] Has no data specific attributes
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [1red] transforming to new transform-basis with <Matrix 4x4 (1.0000, 0.0000, 0.0000, 0.0000)
+            (0.0000, 1.0000, 0.0000, 0.0000)
+            (0.0000, 0.0000, 1.0000, 0.0000)
+            (0.0000, 0.0000, 0.0000, 1.0000)>
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [1red] translation is <Vector (0.0000, 0.0000, 0.0000)>
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [1red] translation is default
+i3dio.node_classes.node.TransformGroupNode:__init__:DEBUG: [1red] Initialized as a 'TransformGroupNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [1red] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [cover_red] is of type 'MESH'
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [cover_red] Filling out basic attributes, {name='cover_red', nodeId='9'}
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [cover_red] has parent element with name [1red]
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cylinder.001] is exported with modifiers applied
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cylinder.001] applying unit scaling
+i3dio.node_classes.node.IndexedTriangleSet:_create_xml_element:DEBUG: [Cylinder.001] Filling out basic attributes, {name='Cylinder.001', nodeId='5'}
+i3dio.node_classes.node.IndexedTriangleSet:populate_from_evaluated_mesh:INFO: [Cylinder.001] Has material 'redLight_mat'
+i3dio.i3d.I3D:add_material:DEBUG: [AmpelEinzel] New Material
+i3dio.node_classes.node.Material:_create_xml_element:DEBUG: [redLight_mat] Filling out basic attributes, {name='redLight_mat', nodeId='3'}
+i3dio.node_classes.node.Material:_normal_from_nodes:DEBUG: [redLight_mat] Has no Normalmap
+i3dio.node_classes.node.Material:_emissive_from_nodes:DEBUG: [redLight_mat] Has no Emissivemap
+i3dio.node_classes.node.Material:_resolve_with_nodes:DEBUG: [redLight_mat] Has no Glossmap
+i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [redLight_mat] Texture: '../shared/detailArray_specular.png', default: ../shared/detailArray_specular.png
+i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [redLight_mat] Texture: '../shared/detailArray_normal.png', default: ../shared/detailArray_normal.png
+i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [redLight_mat] Texture: '../shared/detailArray_diffuse.png', default: ../shared/detailArray_diffuse.png
+i3dio.node_classes.node.IndexedTriangleSet:process_subsets:DEBUG: [Cylinder.001] Subset with index [0] based on material 'redLight_mat'
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cylinder.001] Processing subset: materialId="3" numTriangles="124" firstIndex="0" firstVertex="0" numIndices="0" numVertices="0"
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cylinder.001] Has subset 'redLight_mat' with '124' triangles and materialId="3" numTriangles="124" firstIndex="0" firstVertex="0" numIndices="372" numVertices="192"
+i3dio.node_classes.node.IndexedTriangleSet:populate_xml_element:DEBUG: [Cylinder.001] Has '1' subsets, '124' triangles and '192' vertices
+i3dio.node_classes.node.ShapeNode:populate_xml_element:DEBUG: [cover_red] has shape ID '5'
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeShapeAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [cover_red] transforming to new transform-basis with <Matrix 4x4 ( 0.0000, 1.0000, 0.0000, 0.0708)
+            (-1.0000, 0.0000, 0.0000, 0.2680)
+            ( 0.0000, 0.0000, 1.0000, 0.0000)
+            ( 0.0000, 0.0000, 0.0000, 1.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [cover_red] translation is <Vector (0.0708, 0.2680, 0.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [cover_red] has translation: [0.0708122 0.268 0]
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [cover_red] has rotation(degrees): [0 -0 -90]
+i3dio.node_classes.node.ShapeNode:__init__:DEBUG: [cover_red] Initialized as a 'ShapeNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [cover_red] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [cover_red] no more children to process in object
+i3dio.exporter:_add_object_to_i3d:DEBUG: [light_red] is of type 'LIGHT'
+i3dio.node_classes.node.LightNode:_create_xml_element:DEBUG: [light_red] Filling out basic attributes, {name='light_red', nodeId='10'}
+i3dio.node_classes.node.LightNode:_create_xml_element:DEBUG: [light_red] has parent element with name [1red]
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeLightAttributes'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'color' with value '(1.0, 0.0, 0.0008121734135784209)'. Default is '(1.0, 1.0, 1.0)'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'range' with value '0.15000000596046448'. Default is '1'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'cast_shadow_map' with value 'True'. Default is 'False'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '3' properties
+i3dio.node_classes.node.LightNode:_add_transform_to_xml_element:DEBUG: [light_red] transforming to new transform-basis with <Matrix 4x4 (1.0000,  0.0000, 0.0000, 0.1800)
+            (0.0000,  0.0000, 1.0000, 0.2680)
+            (0.0000, -1.0000, 0.0000, 0.0000)
+            (0.0000,  0.0000, 0.0000, 1.0000)>
+i3dio.node_classes.node.LightNode:_add_transform_to_xml_element:DEBUG: [light_red] translation is <Vector (0.1800, 0.2680, 0.0000)>
+i3dio.node_classes.node.LightNode:_add_transform_to_xml_element:DEBUG: [light_red] has translation: [0.18 0.268 0]
+i3dio.node_classes.node.LightNode:_add_transform_to_xml_element:DEBUG: [light_red] has rotation(degrees): [-90 -0 0]
+i3dio.node_classes.node.LightNode:__init__:DEBUG: [light_red] Initialized as a 'LightNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [light_red] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [light_red] no more children to process in object
+i3dio.exporter:_add_object_to_i3d:DEBUG: [1red] no more children to process in object
+i3dio.exporter:_add_object_to_i3d:DEBUG: [2yellow] is of type 'EMPTY'
+i3dio.node_classes.node.TransformGroupNode:_create_xml_element:DEBUG: [2yellow] Filling out basic attributes, {name='2yellow', nodeId='11'}
+i3dio.node_classes.node.TransformGroupNode:_create_xml_element:DEBUG: [2yellow] has parent element with name [2lights]
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.node_classes.node.TransformGroupNode:_write_properties:DEBUG: [2yellow] Has no data specific attributes
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [2yellow] transforming to new transform-basis with <Matrix 4x4 (1.0000, 0.0000, 0.0000, 0.0000)
+            (0.0000, 1.0000, 0.0000, 0.0000)
+            (0.0000, 0.0000, 1.0000, 0.0000)
+            (0.0000, 0.0000, 0.0000, 1.0000)>
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [2yellow] translation is <Vector (0.0000, 0.0000, 0.0000)>
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [2yellow] translation is default
+i3dio.node_classes.node.TransformGroupNode:__init__:DEBUG: [2yellow] Initialized as a 'TransformGroupNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [2yellow] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [cover_yellow] is of type 'MESH'
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [cover_yellow] Filling out basic attributes, {name='cover_yellow', nodeId='12'}
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [cover_yellow] has parent element with name [2yellow]
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cylinder] is exported with modifiers applied
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cylinder] applying unit scaling
+i3dio.node_classes.node.IndexedTriangleSet:_create_xml_element:DEBUG: [Cylinder] Filling out basic attributes, {name='Cylinder', nodeId='6'}
+i3dio.node_classes.node.IndexedTriangleSet:populate_from_evaluated_mesh:INFO: [Cylinder] Has material 'yellowLight_mat'
+i3dio.i3d.I3D:add_material:DEBUG: [AmpelEinzel] New Material
+i3dio.node_classes.node.Material:_create_xml_element:DEBUG: [yellowLight_mat] Filling out basic attributes, {name='yellowLight_mat', nodeId='4'}
+i3dio.node_classes.node.Material:_normal_from_nodes:DEBUG: [yellowLight_mat] Has no Normalmap
+i3dio.node_classes.node.Material:_emissive_from_nodes:DEBUG: [yellowLight_mat] Has no Emissivemap
+i3dio.node_classes.node.Material:_resolve_with_nodes:DEBUG: [yellowLight_mat] Has no Glossmap
+i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [yellowLight_mat] Texture: '../shared/detailArray_specular.png', default: ../shared/detailArray_specular.png
+i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [yellowLight_mat] Texture: '../shared/detailArray_normal.png', default: ../shared/detailArray_normal.png
+i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [yellowLight_mat] Texture: '../shared/detailArray_diffuse.png', default: ../shared/detailArray_diffuse.png
+i3dio.node_classes.node.IndexedTriangleSet:process_subsets:DEBUG: [Cylinder] Subset with index [0] based on material 'yellowLight_mat'
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cylinder] Processing subset: materialId="4" numTriangles="124" firstIndex="0" firstVertex="0" numIndices="0" numVertices="0"
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cylinder] Has subset 'yellowLight_mat' with '124' triangles and materialId="4" numTriangles="124" firstIndex="0" firstVertex="0" numIndices="372" numVertices="192"
+i3dio.node_classes.node.IndexedTriangleSet:populate_xml_element:DEBUG: [Cylinder] Has '1' subsets, '124' triangles and '192' vertices
+i3dio.node_classes.node.ShapeNode:populate_xml_element:DEBUG: [cover_yellow] has shape ID '6'
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeShapeAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [cover_yellow] transforming to new transform-basis with <Matrix 4x4 ( 0.0000, 1.0000, 0.0000, 0.0708)
+            (-1.0000, 0.0000, 0.0000, 0.0000)
+            ( 0.0000, 0.0000, 1.0000, 0.0000)
+            ( 0.0000, 0.0000, 0.0000, 1.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [cover_yellow] translation is <Vector (0.0708, 0.0000, 0.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [cover_yellow] has translation: [0.0708122 0 0]
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [cover_yellow] has rotation(degrees): [0 -0 -90]
+i3dio.node_classes.node.ShapeNode:__init__:DEBUG: [cover_yellow] Initialized as a 'ShapeNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [cover_yellow] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [cover_yellow] no more children to process in object
+i3dio.exporter:_add_object_to_i3d:DEBUG: [light_yellow] is of type 'LIGHT'
+i3dio.node_classes.node.LightNode:_create_xml_element:DEBUG: [light_yellow] Filling out basic attributes, {name='light_yellow', nodeId='13'}
+i3dio.node_classes.node.LightNode:_create_xml_element:DEBUG: [light_yellow] has parent element with name [2yellow]
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeLightAttributes'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'color' with value '(1.0, 0.8523243069648743, 0.0)'. Default is '(1.0, 1.0, 1.0)'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'range' with value '0.15000000596046448'. Default is '1'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'cast_shadow_map' with value 'True'. Default is 'False'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '3' properties
+i3dio.node_classes.node.LightNode:_add_transform_to_xml_element:DEBUG: [light_yellow] transforming to new transform-basis with <Matrix 4x4 (1.0000,  0.0000, 0.0000, 0.1800)
+            (0.0000,  0.0000, 1.0000, 0.0000)
+            (0.0000, -1.0000, 0.0000, 0.0000)
+            (0.0000,  0.0000, 0.0000, 1.0000)>
+i3dio.node_classes.node.LightNode:_add_transform_to_xml_element:DEBUG: [light_yellow] translation is <Vector (0.1800, 0.0000, 0.0000)>
+i3dio.node_classes.node.LightNode:_add_transform_to_xml_element:DEBUG: [light_yellow] has translation: [0.18 0 0]
+i3dio.node_classes.node.LightNode:_add_transform_to_xml_element:DEBUG: [light_yellow] has rotation(degrees): [-90 -0 0]
+i3dio.node_classes.node.LightNode:__init__:DEBUG: [light_yellow] Initialized as a 'LightNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [light_yellow] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [light_yellow] no more children to process in object
+i3dio.exporter:_add_object_to_i3d:DEBUG: [2yellow] no more children to process in object
+i3dio.exporter:_add_object_to_i3d:DEBUG: [3green] is of type 'EMPTY'
+i3dio.node_classes.node.TransformGroupNode:_create_xml_element:DEBUG: [3green] Filling out basic attributes, {name='3green', nodeId='14'}
+i3dio.node_classes.node.TransformGroupNode:_create_xml_element:DEBUG: [3green] has parent element with name [2lights]
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.node_classes.node.TransformGroupNode:_write_properties:DEBUG: [3green] Has no data specific attributes
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [3green] transforming to new transform-basis with <Matrix 4x4 (1.0000, 0.0000, 0.0000, 0.0000)
+            (0.0000, 1.0000, 0.0000, 0.0000)
+            (0.0000, 0.0000, 1.0000, 0.0000)
+            (0.0000, 0.0000, 0.0000, 1.0000)>
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [3green] translation is <Vector (0.0000, 0.0000, 0.0000)>
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [3green] translation is default
+i3dio.node_classes.node.TransformGroupNode:__init__:DEBUG: [3green] Initialized as a 'TransformGroupNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [3green] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [cover_green] is of type 'MESH'
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [cover_green] Filling out basic attributes, {name='cover_green', nodeId='15'}
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [cover_green] has parent element with name [3green]
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cylinder.002] is exported with modifiers applied
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cylinder.002] applying unit scaling
+i3dio.node_classes.node.IndexedTriangleSet:_create_xml_element:DEBUG: [Cylinder.002] Filling out basic attributes, {name='Cylinder.002', nodeId='7'}
+i3dio.node_classes.node.IndexedTriangleSet:populate_from_evaluated_mesh:INFO: [Cylinder.002] Has material 'greenLight_mat'
+i3dio.i3d.I3D:add_material:DEBUG: [AmpelEinzel] New Material
+i3dio.node_classes.node.Material:_create_xml_element:DEBUG: [greenLight_mat] Filling out basic attributes, {name='greenLight_mat', nodeId='5'}
+i3dio.utility:as_fs_relative_path:DEBUG: Original filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shared\default_normal.dds
+i3dio.utility:as_fs_relative_path:DEBUG: Cleaned filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shared\default_normal.dds
+i3dio.utility:as_fs_relative_path:DEBUG: FS data path: E:\Program Files (x86)\Farming Simulator 2022\data
+i3dio.utility:as_fs_relative_path:DEBUG: Fs relative path: $data\shared\default_normal.dds
+i3dio.node_classes.node.Material:_normal_from_nodes:DEBUG: [greenLight_mat] Has Normalmap '$data\shared\default_normal.dds'
+i3dio.i3d.I3D:add_file:DEBUG: [AmpelEinzel] New File
+i3dio.utility:as_fs_relative_path:DEBUG: Original filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shared\default_normal.dds
+i3dio.utility:as_fs_relative_path:DEBUG: Cleaned filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shared\default_normal.dds
+i3dio.utility:as_fs_relative_path:DEBUG: FS data path: E:\Program Files (x86)\Farming Simulator 2022\data
+i3dio.utility:as_fs_relative_path:DEBUG: Fs relative path: $data\shared\default_normal.dds
+i3dio.node_classes.file.Image:_resolve_filepath:INFO: [default_normal.dds] Resolved filepath: $data\shared\default_normal.dds
+i3dio.node_classes.file.Image:_create_xml_element:DEBUG: [default_normal.dds] Filling out basic attributes, {name='$data/shared/default_normal.dds', nodeId='2'}
+i3dio.node_classes.node.Material:_emissive_from_nodes:DEBUG: [greenLight_mat] Has no Emissivemap
+i3dio.node_classes.node.Material:_resolve_with_nodes:DEBUG: [greenLight_mat] Has no Glossmap
+i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [greenLight_mat] Texture: '../shared/detailArray_specular.png', default: ../shared/detailArray_specular.png
+i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [greenLight_mat] Texture: '../shared/detailArray_normal.png', default: ../shared/detailArray_normal.png
+i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [greenLight_mat] Texture: '../shared/detailArray_diffuse.png', default: ../shared/detailArray_diffuse.png
+i3dio.node_classes.node.IndexedTriangleSet:process_subsets:DEBUG: [Cylinder.002] Subset with index [0] based on material 'greenLight_mat'
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cylinder.002] Processing subset: materialId="5" numTriangles="124" firstIndex="0" firstVertex="0" numIndices="0" numVertices="0"
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cylinder.002] Has subset 'greenLight_mat' with '124' triangles and materialId="5" numTriangles="124" firstIndex="0" firstVertex="0" numIndices="372" numVertices="192"
+i3dio.node_classes.node.IndexedTriangleSet:populate_xml_element:DEBUG: [Cylinder.002] Has '1' subsets, '124' triangles and '192' vertices
+i3dio.node_classes.node.ShapeNode:populate_xml_element:DEBUG: [cover_green] has shape ID '7'
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeShapeAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [cover_green] transforming to new transform-basis with <Matrix 4x4 ( 0.0000, 1.0000, 0.0000,  0.0708)
+            (-1.0000, 0.0000, 0.0000, -0.2680)
+            ( 0.0000, 0.0000, 1.0000,  0.0000)
+            ( 0.0000, 0.0000, 0.0000,  1.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [cover_green] translation is <Vector (0.0708, -0.2680, 0.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [cover_green] has translation: [0.0708122 -0.268 0]
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [cover_green] has rotation(degrees): [0 -0 -90]
+i3dio.node_classes.node.ShapeNode:__init__:DEBUG: [cover_green] Initialized as a 'ShapeNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [cover_green] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [cover_green] no more children to process in object
+i3dio.exporter:_add_object_to_i3d:DEBUG: [light_green] is of type 'LIGHT'
+i3dio.node_classes.node.LightNode:_create_xml_element:DEBUG: [light_green] Filling out basic attributes, {name='light_green', nodeId='16'}
+i3dio.node_classes.node.LightNode:_create_xml_element:DEBUG: [light_green] has parent element with name [3green]
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeLightAttributes'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'color' with value '(0.01196227129548788, 1.0, 0.03256746381521225)'. Default is '(1.0, 1.0, 1.0)'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'range' with value '0.15000000596046448'. Default is '1'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'cast_shadow_map' with value 'True'. Default is 'False'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '3' properties
+i3dio.node_classes.node.LightNode:_add_transform_to_xml_element:DEBUG: [light_green] transforming to new transform-basis with <Matrix 4x4 (1.0000,  0.0000, 0.0000,  0.1800)
+            (0.0000,  0.0000, 1.0000, -0.2680)
+            (0.0000, -1.0000, 0.0000,  0.0000)
+            (0.0000,  0.0000, 0.0000,  1.0000)>
+i3dio.node_classes.node.LightNode:_add_transform_to_xml_element:DEBUG: [light_green] translation is <Vector (0.1800, -0.2680, 0.0000)>
+i3dio.node_classes.node.LightNode:_add_transform_to_xml_element:DEBUG: [light_green] has translation: [0.18 -0.268 0]
+i3dio.node_classes.node.LightNode:_add_transform_to_xml_element:DEBUG: [light_green] has rotation(degrees): [-90 -0 0]
+i3dio.node_classes.node.LightNode:__init__:DEBUG: [light_green] Initialized as a 'LightNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [light_green] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [light_green] no more children to process in object
+i3dio.exporter:_add_object_to_i3d:DEBUG: [3green] no more children to process in object
+i3dio.exporter:_add_object_to_i3d:DEBUG: [2lights] no more children to process in object
+i3dio.exporter:_add_object_to_i3d:DEBUG: [3aiBlocker] is of type 'EMPTY'
+i3dio.node_classes.node.TransformGroupNode:_create_xml_element:DEBUG: [3aiBlocker] Filling out basic attributes, {name='3aiBlocker', nodeId='17'}
+i3dio.node_classes.node.TransformGroupNode:_create_xml_element:DEBUG: [3aiBlocker] has parent element with name [trafficLight]
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.node_classes.node.TransformGroupNode:_write_properties:DEBUG: [3aiBlocker] Has no data specific attributes
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [3aiBlocker] transforming to new transform-basis with <Matrix 4x4 (1.0000, 0.0000, 0.0000, 0.0000)
+            (0.0000, 1.0000, 0.0000, 0.0000)
+            (0.0000, 0.0000, 1.0000, 0.0000)
+            (0.0000, 0.0000, 0.0000, 1.0000)>
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [3aiBlocker] translation is <Vector (0.0000, 0.0000, 0.0000)>
+i3dio.node_classes.node.TransformGroupNode:_add_transform_to_xml_element:DEBUG: [3aiBlocker] translation is default
+i3dio.node_classes.node.TransformGroupNode:__init__:DEBUG: [3aiBlocker] Initialized as a 'TransformGroupNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [3aiBlocker] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [Cube] is of type 'MESH'
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [Cube] Filling out basic attributes, {name='Cube', nodeId='18'}
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [Cube] has parent element with name [3aiBlocker]
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cube] is exported with modifiers applied
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cube] applying unit scaling
+i3dio.node_classes.node.IndexedTriangleSet:_create_xml_element:DEBUG: [Cube] Filling out basic attributes, {name='Cube', nodeId='8'}
+i3dio.node_classes.node.IndexedTriangleSet:populate_from_evaluated_mesh:WARNING: [Cube] triangle(s) found with empty material slot, assigning default material
+i3dio.i3d.I3D:add_material:DEBUG: [AmpelEinzel] New Material
+i3dio.node_classes.node.Material:_create_xml_element:DEBUG: [i3d_default_material] Filling out basic attributes, {name='i3d_default_material', nodeId='6'}
+i3dio.node_classes.node.Material:_resolve_without_nodes:DEBUG: [i3d_default_material] Does not use nodes
+i3dio.node_classes.node.IndexedTriangleSet:populate_from_evaluated_mesh:INFO: [Cube] Has material 'i3d_default_material'
+i3dio.node_classes.node.IndexedTriangleSet:process_subsets:DEBUG: [Cube] Subset with index [0] based on material 'i3d_default_material'
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cube] Processing subset: materialId="6" numTriangles="12" firstIndex="0" firstVertex="0" numIndices="0" numVertices="0"
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cube] Has subset 'i3d_default_material' with '12' triangles and materialId="6" numTriangles="12" firstIndex="0" firstVertex="0" numIndices="36" numVertices="24"
+i3dio.node_classes.node.IndexedTriangleSet:populate_xml_element:DEBUG: [Cube] Has '1' subsets, '12' triangles and '24' vertices
+i3dio.node_classes.node.ShapeNode:populate_xml_element:DEBUG: [Cube] has shape ID '8'
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'rigid_body_type' with value 'kinematic'. Default is 'none'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'collision_mask' with value '20ff'. Default is 'ff'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '2' properties
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeShapeAttributes'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'non_renderable' with value 'True'. Default is 'False'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'distance_blending' with value 'False'. Default is 'True'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '2' properties
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cube] transforming to new transform-basis with <Matrix 4x4 (1.0000, 0.0000, 0.0000, 1.0000)
+            (0.0000, 1.0000, 0.0000, 1.0000)
+            (0.0000, 0.0000, 1.0000, 1.5000)
+            (0.0000, 0.0000, 0.0000, 1.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cube] translation is <Vector (1.0000, 1.0000, 1.5000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cube] has translation: [1 1 1.5]
+i3dio.node_classes.node.ShapeNode:__init__:DEBUG: [Cube] Initialized as a 'ShapeNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [Cube] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [Cube] no more children to process in object
+i3dio.exporter:_add_object_to_i3d:DEBUG: [3aiBlocker] no more children to process in object
+i3dio.exporter:_add_object_to_i3d:DEBUG: [trafficLight] no more children to process in object
