@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+	<author>Achimobil</author>
+	<version>1.0.0.0</version>
+	<title>
+		<de>KI-Verkehr Ampelanlagen Skript</de>
+		<en>AI-Traffic Light System Script</en>
+	</title>
+	<description>
+		<de><![CDATA[Skript für eine Ampelanlage die den KI Verkehr und in zukunft auch den AD Verkehr regelt. 
+Nur bei Grün fahren die KI Fahrzeuge. 
+Die Grünphasen können direkt in der Map eingestellt werden.
+Jede Kreuzung kann so viele Phasen haben, wie man braucht.
+Jede Phase hat so viele Ampeln und Lichter haben, wie man braucht.
+Die Struktur kann man sich in der Beispiel i3d Kreuzung anschauen.
+Diese darf auch direkt in Maps verbaut werden.
+Ausführlichere Beschreibung in der Skriptdatei.
+Ampeln Syncronisieren sich im Multiplayer.
+]]></de>
+		<en><![CDATA[Script for a traffic light system that regulates the AI traffic and in the future also the AD traffic. 
+Only with green the AI vehicles drive. 
+The green phases can be set directly in the map.
+Each crossing can have as many phases as you need.
+Each phase has as many traffic lights and lights as you need.
+The structure can be seen in the example i3d crossing.
+It can also be used directly in maps.
+More detailed description in the script file.
+Trafficlights are synced in Multiplayer.]]></en>
+	</description>
+	<categories>
+		<category>Other</category>
+		<category>Static</category>
+	</categories>
+	<iconFilename>icon_TrafficLight.dds</iconFilename>
+	<prefabs>
+		<prefab name="Traffic Light Crossing" i3dFilename="TrafficLightCrossing.i3d"/>
+	</prefabs>
+    <multiplayer supported="true"/>
+	<extraSourceFiles>
+		<sourceFile filename="TrafficLightCrossing.lua"/>
+	</extraSourceFiles>
+</prefabDesc>
