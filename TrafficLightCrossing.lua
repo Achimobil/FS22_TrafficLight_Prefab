@@ -4,8 +4,8 @@ TrafficLightCrossing Script File
 Copyright (C) Achimobil 2022
 
 Author: Achimobil
-Date: 06.12.2022
-Version: 0.3.0.0
+Date: 18.12.2022
+Version: 1.0.0.0
 
 Contact/Help/Tutorials:
 https://discord.gg/Va7JNnEkcW
@@ -36,12 +36,13 @@ You can add multiple TrafficLight nodes. Also multiple of them with the same pha
 Make sure that your phaseSeconds has the same amount of times than you use as numbers in the TrafficLight nodes.
 Phases are started with 1 and can be up to unlimited for big crossings.
 
-This version of the script is exclusive for Agrar Land Modding, short ALM.
-ALM is the only with permission to use this script with all Mods created in the name of ALM
+This version of the script is made as Prefab for the modhub and is allowed to use in maps without asking.
+It is not allowed to change the script and republish it in any way. 
 
 Changelog
 0.2.0.0 First Version
 0.3.0.0 Change Collision of blocking trigger to CollisionFlag.TRIGGER_TRAFFIC_VEHICLE_BLOCKING + CollisionFlag.AI_BLOCKING
+1.0.0.0 Prefab Modhub Version
 ]]
 
 TrafficLightCrossing = {}
