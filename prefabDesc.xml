@@ -31,7 +31,7 @@ Trafficlights are synced in Multiplayer.]]></en>
 		<category>Other</category>
 		<category>Static</category>
 	</categories>
-	<iconFilename>icon_TrafficLight.dds</iconFilename>
+	<iconFilename>icon_TrafficLightCrossing.dds</iconFilename>
 	<prefabs>
 		<prefab name="Traffic Light Crossing" i3dFilename="TrafficLightCrossing.i3d"/>
 	</prefabs>
