@@ -83,7 +83,9 @@ i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from pro
 i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'rigid_body_type' with value 'static'. Default is 'none'
 i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '1' properties
 i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeShapeAttributes'
-i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'casts_shadows' with value 'True'. Default is 'False'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'receive_shadows' with value 'True'. Default is 'False'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '2' properties
 i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cylinder] transforming to new transform-basis with <Matrix 4x4 (1.0000, 0.0000, 0.0000,  0.0000)
             (0.0000, 1.0000, 0.0000, -1.4000)
             (0.0000, 0.0000, 1.0000,  0.0000)
@@ -125,7 +127,9 @@ i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from pro
 i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'rigid_body_type' with value 'static'. Default is 'none'
 i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '1' properties
 i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeShapeAttributes'
-i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'casts_shadows' with value 'True'. Default is 'False'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'receive_shadows' with value 'True'. Default is 'False'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '2' properties
 i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [box_green] transforming to new transform-basis with <Matrix 4x4 (1.0000, 0.0000, 0.0000,  0.0000)
             (0.0000, 1.0000, 0.0000, -0.2680)
             (0.0000, 0.0000, 1.0000,  0.0000)
@@ -151,7 +155,9 @@ i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from pro
 i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'rigid_body_type' with value 'static'. Default is 'none'
 i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '1' properties
 i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeShapeAttributes'
-i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'casts_shadows' with value 'True'. Default is 'False'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'receive_shadows' with value 'True'. Default is 'False'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '2' properties
 i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [box_red] transforming to new transform-basis with <Matrix 4x4 (1.0000, 0.0000, 0.0000, 0.0000)
             (0.0000, 1.0000, 0.0000, 0.2680)
             (0.0000, 0.0000, 1.0000, 0.0000)
@@ -177,7 +183,9 @@ i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from pro
 i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'rigid_body_type' with value 'static'. Default is 'none'
 i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '1' properties
 i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeShapeAttributes'
-i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'casts_shadows' with value 'True'. Default is 'False'
+i3dio.xml_i3d:write_i3d_properties:DEBUG: Property 'receive_shadows' with value 'True'. Default is 'False'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '2' properties
 i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [box_yellow] transforming to new transform-basis with <Matrix 4x4 (1.0000, 0.0000, 0.0000, 0.0000)
             (0.0000, 1.0000, 0.0000, 0.0000)
             (0.0000, 0.0000, 1.0000, 0.0000)
@@ -435,6 +443,7 @@ i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cube] is 
 i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cube] applying unit scaling
 i3dio.node_classes.node.IndexedTriangleSet:_create_xml_element:DEBUG: [Cube] Filling out basic attributes, {name='Cube', nodeId='8'}
 i3dio.node_classes.node.IndexedTriangleSet:populate_from_evaluated_mesh:WARNING: [Cube] triangle(s) found with empty material slot, assigning default material
+i3dio.i3d.I3D:get_default_material:INFO: [AmpelEinzel] Default material does not exist. Creating 'i3d_default_material'
 i3dio.i3d.I3D:add_material:DEBUG: [AmpelEinzel] New Material
 i3dio.node_classes.node.Material:_create_xml_element:DEBUG: [i3d_default_material] Filling out basic attributes, {name='i3d_default_material', nodeId='6'}
 i3dio.node_classes.node.Material:_resolve_without_nodes:DEBUG: [i3d_default_material] Does not use nodes

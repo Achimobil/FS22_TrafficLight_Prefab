@@ -30,7 +30,7 @@
     </Material>
     <Material name="i3d_default_material" materialId="5" diffuseColor="0.8 0.8 0.8 1" specularColor="0.6 1 0">
     </Material>
-    <Material name="plastic_mat" materialId="92" diffuseColor="0 0 0 1" customShaderId="4" customShaderVariation="colorMask">
+    <Material name="plastic_mat" materialId="6" diffuseColor="0 0 0 1" customShaderId="4" customShaderVariation="colorMask">
       <Normalmap fileId="2"/>
       <Glossmap fileId="3"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
@@ -44,7 +44,7 @@
       <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
       <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
     </Material>
-    <Material name="pole_mat" materialId="93" diffuseColor="0.0823529 0.0823529 0.0823529 1" customShaderId="4" customShaderVariation="colorMask">
+    <Material name="pole_mat" materialId="92" diffuseColor="0.0862745 0.0862745 0.0862745 1" customShaderId="4" customShaderVariation="colorMask">
       <Normalmap fileId="2"/>
       <Glossmap fileId="3"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
@@ -99,11 +99,11 @@
   <Scene>
       <TransformGroup name="crossing" nodeId="17">
         <TransformGroup name="trafficLight" translation="2.5 0 -2.5" nodeId="18">
-          <TransformGroup name="1collision" translation="0 2.4 0" nodeId="120">
-            <Shape shapeId="1" name="Cylinder" translation="0 -1.4 0" static="true" nodeId="121" materialIds="93"/>
-            <Shape shapeId="2" name="box_green" translation="0 -0.268 0" static="true" nodeId="122" materialIds="92"/>
-            <Shape shapeId="2" name="box_red" translation="0 0.268 0" static="true" nodeId="123" materialIds="92"/>
-            <Shape shapeId="2" name="box_yellow" static="true" nodeId="124" materialIds="92"/>
+          <TransformGroup name="1collision" translation="0 2.4 0" nodeId="138">
+            <Shape shapeId="1" name="Cylinder" translation="0 -1.4 0" static="true" nodeId="139" materialIds="92" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_green" translation="0 -0.268 0" static="true" nodeId="140" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_red" translation="0 0.268 0" static="true" nodeId="141" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_yellow" static="true" nodeId="142" materialIds="6" castsShadows="true" receiveShadows="true"/>
           </TransformGroup>
           <TransformGroup name="2lights" translation="0 2.4 0" nodeId="24">
             <TransformGroup name="1red" nodeId="25">
@@ -124,11 +124,11 @@
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="trafficLight" translation="-2.5 0 2.5" rotation="180 -1.86693e-05 180" nodeId="36">
-          <TransformGroup name="1collision" translation="0 2.4 1.2795e-07" rotation="-4.07111e-13 -1.62844e-12 -3.67829e-15" nodeId="125">
-            <Shape shapeId="1" name="Cylinder" translation="0 -1.4 0" static="true" nodeId="126" materialIds="93"/>
-            <Shape shapeId="2" name="box_green" translation="0 -0.268 0" static="true" nodeId="127" materialIds="92"/>
-            <Shape shapeId="2" name="box_red" translation="0 0.268 0" static="true" nodeId="128" materialIds="92"/>
-            <Shape shapeId="2" name="box_yellow" static="true" nodeId="129" materialIds="92"/>
+          <TransformGroup name="1collision" translation="0 2.4 0" nodeId="133">
+            <Shape shapeId="1" name="Cylinder" translation="0 -1.4 0" static="true" nodeId="134" materialIds="92" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_green" translation="0 -0.268 0" static="true" nodeId="135" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_red" translation="0 0.268 0" static="true" nodeId="136" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_yellow" static="true" nodeId="137" materialIds="6" castsShadows="true" receiveShadows="true"/>
           </TransformGroup>
           <TransformGroup name="2lights" translation="0 2.4 0" nodeId="42">
             <TransformGroup name="1red" nodeId="43">
@@ -149,11 +149,11 @@
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="trafficLight" translation="2.5 0 2.5" rotation="-0 -90 0" nodeId="54">
-          <TransformGroup name="1collision" translation="1.98616e-08 2.4 0" nodeId="130">
-            <Shape shapeId="1" name="Cylinder" translation="0 -1.4 0" static="true" nodeId="131" materialIds="93"/>
-            <Shape shapeId="2" name="box_green" translation="0 -0.268 0" static="true" nodeId="132" materialIds="92"/>
-            <Shape shapeId="2" name="box_red" translation="0 0.268 0" static="true" nodeId="133" materialIds="92"/>
-            <Shape shapeId="2" name="box_yellow" static="true" nodeId="134" materialIds="92"/>
+          <TransformGroup name="1collision" translation="0 2.4 0" nodeId="128">
+            <Shape shapeId="1" name="Cylinder" translation="0 -1.4 0" static="true" nodeId="129" materialIds="92" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_green" translation="0 -0.268 0" static="true" nodeId="130" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_red" translation="0 0.268 0" static="true" nodeId="131" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_yellow" static="true" nodeId="132" materialIds="6" castsShadows="true" receiveShadows="true"/>
           </TransformGroup>
           <TransformGroup name="2lights" translation="0 2.4 0" nodeId="60">
             <TransformGroup name="1red" nodeId="61">
@@ -174,11 +174,11 @@
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="trafficLight" translation="-2.5 0 -2.5" rotation="-0 90 0" nodeId="72">
-          <TransformGroup name="1collision" translation="-1.98616e-08 2.4 0" nodeId="135">
-            <Shape shapeId="1" name="Cylinder" translation="0 -1.4 0" static="true" nodeId="136" materialIds="93"/>
-            <Shape shapeId="2" name="box_green" translation="0 -0.268 0" static="true" nodeId="137" materialIds="92"/>
-            <Shape shapeId="2" name="box_red" translation="0 0.268 0" static="true" nodeId="138" materialIds="92"/>
-            <Shape shapeId="2" name="box_yellow" static="true" nodeId="139" materialIds="92"/>
+          <TransformGroup name="1collision" translation="0 2.4 0" nodeId="123">
+            <Shape shapeId="1" name="Cylinder" translation="0 -1.4 0" static="true" nodeId="124" materialIds="92" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_green" translation="0 -0.268 0" static="true" nodeId="125" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_red" translation="0 0.268 0" static="true" nodeId="126" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_yellow" static="true" nodeId="127" materialIds="6" castsShadows="true" receiveShadows="true"/>
           </TransformGroup>
           <TransformGroup name="2lights" translation="0 2.4 0" nodeId="78">
             <TransformGroup name="1red" nodeId="79">
