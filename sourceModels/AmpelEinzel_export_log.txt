@@ -1,7 +1,7 @@
 i3dio.exporter:export_blend_to_i3d:INFO: Blender version is: 2.93.9
 i3dio.exporter:export_blend_to_i3d:INFO: I3D Exporter version is: 4.1.1
 i3dio.exporter:export_blend_to_i3d:INFO: Exported using 'lxml'
-i3dio.exporter:export_blend_to_i3d:INFO: Exporting to D:\Achim\source\repos\FS22_BurgWilhelmstein\sourceModels\Ampel\AmpelEinzel.i3d
+i3dio.exporter:export_blend_to_i3d:INFO: Exporting to D:\Achim\source\repos\FS22_TrafficLight_Prefab\sourceModels\AmpelEinzel.i3d
 i3dio.exporter:_export_active_collection:INFO: 'Active collection' export is selected
 i3dio.exporter:_add_object_to_i3d:DEBUG: [trafficLight] is of type 'EMPTY'
 i3dio.node_classes.node.TransformGroupNode:_create_xml_element:DEBUG: [trafficLight] Filling out basic attributes, {name='trafficLight', nodeId='1'}
@@ -39,16 +39,38 @@ i3dio.node_classes.node.IndexedTriangleSet:_create_xml_element:DEBUG: [Cylinder.
 i3dio.node_classes.node.IndexedTriangleSet:populate_from_evaluated_mesh:INFO: [Cylinder.003] Has material 'pole_mat'
 i3dio.i3d.I3D:add_material:DEBUG: [AmpelEinzel] New Material
 i3dio.node_classes.node.Material:_create_xml_element:DEBUG: [pole_mat] Filling out basic attributes, {name='pole_mat', nodeId='1'}
-i3dio.node_classes.node.Material:_normal_from_nodes:DEBUG: [pole_mat] Has no Normalmap
+i3dio.utility:as_fs_relative_path:DEBUG: Original filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shared\default_normal.dds
+i3dio.utility:as_fs_relative_path:DEBUG: Cleaned filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shared\default_normal.dds
+i3dio.utility:as_fs_relative_path:DEBUG: FS data path: E:\Program Files (x86)\Farming Simulator 2022\data
+i3dio.utility:as_fs_relative_path:DEBUG: Fs relative path: $data\shared\default_normal.dds
+i3dio.node_classes.node.Material:_normal_from_nodes:DEBUG: [pole_mat] Has Normalmap '$data\shared\default_normal.dds'
+i3dio.i3d.I3D:add_file:DEBUG: [AmpelEinzel] New File
+i3dio.utility:as_fs_relative_path:DEBUG: Original filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shared\default_normal.dds
+i3dio.utility:as_fs_relative_path:DEBUG: Cleaned filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shared\default_normal.dds
+i3dio.utility:as_fs_relative_path:DEBUG: FS data path: E:\Program Files (x86)\Farming Simulator 2022\data
+i3dio.utility:as_fs_relative_path:DEBUG: Fs relative path: $data\shared\default_normal.dds
+i3dio.node_classes.file.Image:_resolve_filepath:INFO: [default_normal.dds] Resolved filepath: $data\shared\default_normal.dds
+i3dio.node_classes.file.Image:_create_xml_element:DEBUG: [default_normal.dds] Filling out basic attributes, {name='$data/shared/default_normal.dds', nodeId='1'}
 i3dio.node_classes.node.Material:_emissive_from_nodes:DEBUG: [pole_mat] Has no Emissivemap
-i3dio.node_classes.node.Material:_resolve_with_nodes:DEBUG: [pole_mat] Has no Glossmap
+i3dio.utility:as_fs_relative_path:DEBUG: Original filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shared\default_specular.dds
+i3dio.utility:as_fs_relative_path:DEBUG: Cleaned filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shared\default_specular.dds
+i3dio.utility:as_fs_relative_path:DEBUG: FS data path: E:\Program Files (x86)\Farming Simulator 2022\data
+i3dio.utility:as_fs_relative_path:DEBUG: Fs relative path: $data\shared\default_specular.dds
+i3dio.node_classes.node.Material:_resolve_with_nodes:DEBUG: [pole_mat] Has Glossmap '$data\shared\default_specular.dds'
+i3dio.i3d.I3D:add_file:DEBUG: [AmpelEinzel] New File
+i3dio.utility:as_fs_relative_path:DEBUG: Original filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shared\default_specular.dds
+i3dio.utility:as_fs_relative_path:DEBUG: Cleaned filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shared\default_specular.dds
+i3dio.utility:as_fs_relative_path:DEBUG: FS data path: E:\Program Files (x86)\Farming Simulator 2022\data
+i3dio.utility:as_fs_relative_path:DEBUG: Fs relative path: $data\shared\default_specular.dds
+i3dio.node_classes.file.Image:_resolve_filepath:INFO: [default_specular.dds] Resolved filepath: $data\shared\default_specular.dds
+i3dio.node_classes.file.Image:_create_xml_element:DEBUG: [default_specular.dds] Filling out basic attributes, {name='$data/shared/default_specular.dds', nodeId='2'}
 i3dio.i3d.I3D:add_file:DEBUG: [AmpelEinzel] New File
 i3dio.utility:as_fs_relative_path:DEBUG: Original filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shaders\vehicleShader.xml
 i3dio.utility:as_fs_relative_path:DEBUG: Cleaned filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shaders\vehicleShader.xml
 i3dio.utility:as_fs_relative_path:DEBUG: FS data path: E:\Program Files (x86)\Farming Simulator 2022\data
 i3dio.utility:as_fs_relative_path:DEBUG: Fs relative path: $data\shaders\vehicleShader.xml
 i3dio.node_classes.file.Shader:_resolve_filepath:INFO: [vehicleShader.xml] Resolved filepath: $data\shaders\vehicleShader.xml
-i3dio.node_classes.file.Shader:_create_xml_element:DEBUG: [vehicleShader.xml] Filling out basic attributes, {name='$data/shaders/vehicleShader.xml', nodeId='1'}
+i3dio.node_classes.file.Shader:_create_xml_element:DEBUG: [vehicleShader.xml] Filling out basic attributes, {name='$data/shaders/vehicleShader.xml', nodeId='3'}
 i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [pole_mat] Texture: '../shared/detailArray_specular.png', default: ../shared/detailArray_specular.png
 i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [pole_mat] Texture: '../shared/detailArray_normal.png', default: ../shared/detailArray_normal.png
 i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [pole_mat] Texture: '../shared/detailArray_diffuse.png', default: ../shared/detailArray_diffuse.png
@@ -80,9 +102,17 @@ i3dio.node_classes.node.IndexedTriangleSet:_create_xml_element:DEBUG: [Cube.003]
 i3dio.node_classes.node.IndexedTriangleSet:populate_from_evaluated_mesh:INFO: [Cube.003] Has material 'plastic_mat'
 i3dio.i3d.I3D:add_material:DEBUG: [AmpelEinzel] New Material
 i3dio.node_classes.node.Material:_create_xml_element:DEBUG: [plastic_mat] Filling out basic attributes, {name='plastic_mat', nodeId='2'}
-i3dio.node_classes.node.Material:_normal_from_nodes:DEBUG: [plastic_mat] Has no Normalmap
+i3dio.utility:as_fs_relative_path:DEBUG: Original filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shared\default_normal.dds
+i3dio.utility:as_fs_relative_path:DEBUG: Cleaned filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shared\default_normal.dds
+i3dio.utility:as_fs_relative_path:DEBUG: FS data path: E:\Program Files (x86)\Farming Simulator 2022\data
+i3dio.utility:as_fs_relative_path:DEBUG: Fs relative path: $data\shared\default_normal.dds
+i3dio.node_classes.node.Material:_normal_from_nodes:DEBUG: [plastic_mat] Has Normalmap '$data\shared\default_normal.dds'
 i3dio.node_classes.node.Material:_emissive_from_nodes:DEBUG: [plastic_mat] Has no Emissivemap
-i3dio.node_classes.node.Material:_resolve_with_nodes:DEBUG: [plastic_mat] Has no Glossmap
+i3dio.utility:as_fs_relative_path:DEBUG: Original filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shared\default_specular.dds
+i3dio.utility:as_fs_relative_path:DEBUG: Cleaned filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shared\default_specular.dds
+i3dio.utility:as_fs_relative_path:DEBUG: FS data path: E:\Program Files (x86)\Farming Simulator 2022\data
+i3dio.utility:as_fs_relative_path:DEBUG: Fs relative path: $data\shared\default_specular.dds
+i3dio.node_classes.node.Material:_resolve_with_nodes:DEBUG: [plastic_mat] Has Glossmap '$data\shared\default_specular.dds'
 i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [plastic_mat] Texture: '../shared/detailArray_specular.png', default: ../shared/detailArray_specular.png
 i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [plastic_mat] Texture: '../shared/detailArray_normal.png', default: ../shared/detailArray_normal.png
 i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [plastic_mat] Texture: '../shared/detailArray_diffuse.png', default: ../shared/detailArray_diffuse.png
@@ -338,13 +368,6 @@ i3dio.utility:as_fs_relative_path:DEBUG: Cleaned filepath: E:\Program Files (x86
 i3dio.utility:as_fs_relative_path:DEBUG: FS data path: E:\Program Files (x86)\Farming Simulator 2022\data
 i3dio.utility:as_fs_relative_path:DEBUG: Fs relative path: $data\shared\default_normal.dds
 i3dio.node_classes.node.Material:_normal_from_nodes:DEBUG: [greenLight_mat] Has Normalmap '$data\shared\default_normal.dds'
-i3dio.i3d.I3D:add_file:DEBUG: [AmpelEinzel] New File
-i3dio.utility:as_fs_relative_path:DEBUG: Original filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shared\default_normal.dds
-i3dio.utility:as_fs_relative_path:DEBUG: Cleaned filepath: E:\Program Files (x86)\Farming Simulator 2022\data\shared\default_normal.dds
-i3dio.utility:as_fs_relative_path:DEBUG: FS data path: E:\Program Files (x86)\Farming Simulator 2022\data
-i3dio.utility:as_fs_relative_path:DEBUG: Fs relative path: $data\shared\default_normal.dds
-i3dio.node_classes.file.Image:_resolve_filepath:INFO: [default_normal.dds] Resolved filepath: $data\shared\default_normal.dds
-i3dio.node_classes.file.Image:_create_xml_element:DEBUG: [default_normal.dds] Filling out basic attributes, {name='$data/shared/default_normal.dds', nodeId='2'}
 i3dio.node_classes.node.Material:_emissive_from_nodes:DEBUG: [greenLight_mat] Has no Emissivemap
 i3dio.node_classes.node.Material:_resolve_with_nodes:DEBUG: [greenLight_mat] Has no Glossmap
 i3dio.node_classes.node.Material:_export_shader_settings:DEBUG: [greenLight_mat] Texture: '../shared/detailArray_specular.png', default: ../shared/detailArray_specular.png
