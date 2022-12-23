@@ -8,7 +8,7 @@ Date: 18.12.2022
 Version: 1.0.0.0
 
 Contact/Help/Tutorials:
-https://discord.gg/Va7JNnEkcW
+https://www.achimobil.de/ls-19-22-modding/
 
 Usage:
 Create Traffic Light with these structure. Example has 2 traffic lights in the crossing:
