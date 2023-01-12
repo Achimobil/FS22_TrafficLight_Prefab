@@ -13,7 +13,7 @@ Die Grünphasen können direkt in der Map eingestellt werden.
 Jede Kreuzung kann so viele Phasen haben, wie man braucht.
 Jede Phase hat so viele Ampeln und Lichter haben, wie man braucht.
 Die Struktur kann man sich in der Beispiel i3d Kreuzung anschauen.
-Diese darf auch direkt in Maps verbaut werden.
+Diese dient nur als Referenz und ist nicht zur direkten Verwendung in Karten gedacht.
 Ausführlichere Beschreibung in der Skriptdatei.
 Ampeln Syncronisieren sich im Multiplayer.
 ]]></de>
@@ -23,7 +23,7 @@ The green phases can be set directly in the map.
 Each crossing can have as many phases as you need.
 Each phase has as many traffic lights and lights as you need.
 The structure can be seen in the example i3d crossing.
-It can also be used directly in maps.
+The example is only for reference and not for direct usage in Maps.
 More detailed description in the script file.
 Trafficlights are synced in Multiplayer.]]></en>
 	</description>
