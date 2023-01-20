@@ -44,7 +44,7 @@
       <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
       <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
     </Material>
-    <Material name="pole_mat" materialId="92" diffuseColor="0.0862745 0.0862745 0.0862745 1" customShaderId="4" customShaderVariation="colorMask">
+    <Material name="pole_mat" materialId="7" diffuseColor="0.0823529 0.0823529 0.0823529 1" customShaderId="4" customShaderVariation="colorMask">
       <Normalmap fileId="2"/>
       <Glossmap fileId="3"/>
       <CustomParameter name="RDT" value="0 0 0 0"/>
@@ -98,104 +98,104 @@
 
   <Scene>
       <TransformGroup name="crossing" nodeId="17">
-        <TransformGroup name="trafficLight" translation="2.5 0 -2.5" nodeId="18">
-          <TransformGroup name="1collision" translation="0 2.4 0" nodeId="138">
-            <Shape shapeId="1" name="Cylinder" translation="0 -1.4 0" static="true" nodeId="139" materialIds="92" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="2" name="box_green" translation="0 -0.268 0" static="true" nodeId="140" materialIds="6" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="2" name="box_red" translation="0 0.268 0" static="true" nodeId="141" materialIds="6" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="2" name="box_yellow" static="true" nodeId="142" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="trafficLight" translation="2.5 0 -2.5" clipDistance="100" nodeId="18">
+          <TransformGroup name="1collision" translation="0 2.4 0" clipDistance="100" nodeId="19">
+            <Shape shapeId="1" name="Cylinder" translation="0 -1.4 0" static="true" clipDistance="100" nodeId="20" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_green" translation="0 -0.268 0" static="true" clipDistance="100" nodeId="21" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_red" translation="0 0.268 0" static="true" clipDistance="100" nodeId="22" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_yellow" static="true" clipDistance="100" nodeId="23" materialIds="6" castsShadows="true" receiveShadows="true"/>
           </TransformGroup>
           <TransformGroup name="2lights" translation="0 2.4 0" nodeId="24">
             <TransformGroup name="1red" nodeId="25">
-              <Shape shapeId="3" name="cover_red" translation="0.0708122 0.268 0" rotation="0 -0 -90" nodeId="26" materialIds="8"/>
-              <Light name="light_red" translation="0.18 0.268 0" rotation="-90 -0 0" nodeId="27" type="point" color="1 0 0.000812173" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
+              <Shape shapeId="3" name="cover_red" translation="0.0708122 0.268 0" rotation="0 -0 -90" clipDistance="100" nodeId="26" materialIds="8"/>
+              <Light name="light_red" translation="0.18 0.268 0" rotation="-90 -0 0" clipDistance="100" nodeId="27" type="point" color="1 0 0.000812173" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
             </TransformGroup>
             <TransformGroup name="2yellow" nodeId="28">
-              <Shape shapeId="4" name="cover_yellow" translation="0.0708122 0 0" rotation="0 -0 -90" nodeId="29" materialIds="9"/>
-              <Light name="light_yellow" translation="0.18 0 0" rotation="-90 -0 0" nodeId="30" type="point" color="1 0.852324 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
+              <Shape shapeId="4" name="cover_yellow" translation="0.0708122 0 0" rotation="0 -0 -90" clipDistance="100" nodeId="29" materialIds="9"/>
+              <Light name="light_yellow" translation="0.18 0 0" rotation="-90 -0 0" clipDistance="100" nodeId="30" type="point" color="1 0.852324 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
             </TransformGroup>
             <TransformGroup name="3green" nodeId="31">
-              <Shape shapeId="5" name="cover_green" translation="0.0708122 -0.268 0" rotation="0 -0 -90" nodeId="32" materialIds="4"/>
-              <Light name="light_green" translation="0.18 -0.268 0" rotation="-90 -0 0" nodeId="33" type="point" color="0.0119623 1 0.0325675" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
+              <Shape shapeId="5" name="cover_green" translation="0.0708122 -0.268 0" rotation="0 -0 -90" clipDistance="100" nodeId="32" materialIds="4"/>
+              <Light name="light_green" translation="0.18 -0.268 0" rotation="-90 -0 0" clipDistance="100" nodeId="33" type="point" color="0.0119623 1 0.0325675" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="3aiBlocker" nodeId="34">
-            <Shape shapeId="6" name="Cube" translation="1 1 1.5" kinematic="true" collisionMask="8447" nodeId="35" materialIds="5" nonRenderable="true" distanceBlending="false"/>
+            <Shape shapeId="6" name="Cube" translation="1 1 1.5" kinematic="true" collisionMask="8447" clipDistance="100" nodeId="35" materialIds="5" nonRenderable="true" distanceBlending="false"/>
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="trafficLight" translation="-2.5 0 2.5" rotation="180 -1.86693e-05 180" nodeId="36">
-          <TransformGroup name="1collision" translation="0 2.4 0" nodeId="133">
-            <Shape shapeId="1" name="Cylinder" translation="0 -1.4 0" static="true" nodeId="134" materialIds="92" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="2" name="box_green" translation="0 -0.268 0" static="true" nodeId="135" materialIds="6" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="2" name="box_red" translation="0 0.268 0" static="true" nodeId="136" materialIds="6" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="2" name="box_yellow" static="true" nodeId="137" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="1collision" translation="0 2.4 0" nodeId="37">
+            <Shape shapeId="1" name="Cylinder" translation="0 -1.4 0" static="true" clipDistance="100" nodeId="38" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_green" translation="0 -0.268 0" static="true" clipDistance="100" nodeId="39" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_red" translation="0 0.268 0" static="true" clipDistance="100" nodeId="40" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_yellow" static="true" clipDistance="100" nodeId="41" materialIds="6" castsShadows="true" receiveShadows="true"/>
           </TransformGroup>
           <TransformGroup name="2lights" translation="0 2.4 0" nodeId="42">
             <TransformGroup name="1red" nodeId="43">
-              <Shape shapeId="3" name="cover_red" translation="0.0708122 0.268 0" rotation="0 -0 -90" nodeId="44" materialIds="8"/>
-              <Light name="light_red" translation="0.18 0.268 0" rotation="-90 -0 0" nodeId="45" type="point" color="1 0 0.000812173" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
+              <Shape shapeId="3" name="cover_red" translation="0.0708122 0.268 0" rotation="0 -0 -90" clipDistance="100" nodeId="44" materialIds="8"/>
+              <Light name="light_red" translation="0.18 0.268 0" rotation="-90 -0 0" clipDistance="100" nodeId="45" type="point" color="1 0 0.000812173" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
             </TransformGroup>
             <TransformGroup name="2yellow" nodeId="46">
-              <Shape shapeId="4" name="cover_yellow" translation="0.0708122 0 0" rotation="0 -0 -90" nodeId="47" materialIds="9"/>
-              <Light name="light_yellow" translation="0.18 0 0" rotation="-90 -0 0" nodeId="48" type="point" color="1 0.852324 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
+              <Shape shapeId="4" name="cover_yellow" translation="0.0708122 0 0" rotation="0 -0 -90" clipDistance="100" nodeId="47" materialIds="9"/>
+              <Light name="light_yellow" translation="0.18 0 0" rotation="-90 -0 0" clipDistance="100" nodeId="48" type="point" color="1 0.852324 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
             </TransformGroup>
             <TransformGroup name="3green" nodeId="49">
-              <Shape shapeId="5" name="cover_green" translation="0.0708122 -0.268 0" rotation="0 -0 -90" nodeId="50" materialIds="4"/>
-              <Light name="light_green" translation="0.18 -0.268 0" rotation="-90 -0 0" nodeId="51" type="point" color="0.0119623 1 0.0325675" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
+              <Shape shapeId="5" name="cover_green" translation="0.0708122 -0.268 0" rotation="0 -0 -90" clipDistance="100" nodeId="50" materialIds="4"/>
+              <Light name="light_green" translation="0.18 -0.268 0" rotation="-90 -0 0" clipDistance="100" nodeId="51" type="point" color="0.0119623 1 0.0325675" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="3aiBlocker" nodeId="52">
-            <Shape shapeId="6" name="Cube" translation="1 1 1.5" kinematic="true" collisionMask="8447" nodeId="53" materialIds="5" nonRenderable="true" distanceBlending="false"/>
+            <Shape shapeId="6" name="Cube" translation="1 1 1.5" kinematic="true" collisionMask="8447" clipDistance="100" nodeId="53" materialIds="5" nonRenderable="true" distanceBlending="false"/>
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="trafficLight" translation="2.5 0 2.5" rotation="-0 -90 0" nodeId="54">
-          <TransformGroup name="1collision" translation="0 2.4 0" nodeId="128">
-            <Shape shapeId="1" name="Cylinder" translation="0 -1.4 0" static="true" nodeId="129" materialIds="92" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="2" name="box_green" translation="0 -0.268 0" static="true" nodeId="130" materialIds="6" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="2" name="box_red" translation="0 0.268 0" static="true" nodeId="131" materialIds="6" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="2" name="box_yellow" static="true" nodeId="132" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="1collision" translation="0 2.4 0" nodeId="55">
+            <Shape shapeId="1" name="Cylinder" translation="0 -1.4 0" static="true" clipDistance="100" nodeId="56" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_green" translation="0 -0.268 0" static="true" clipDistance="100" nodeId="57" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_red" translation="0 0.268 0" static="true" clipDistance="100" nodeId="58" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_yellow" static="true" clipDistance="100" nodeId="59" materialIds="6" castsShadows="true" receiveShadows="true"/>
           </TransformGroup>
           <TransformGroup name="2lights" translation="0 2.4 0" nodeId="60">
             <TransformGroup name="1red" nodeId="61">
-              <Shape shapeId="3" name="cover_red" translation="0.0708122 0.268 0" rotation="0 -0 -90" nodeId="62" materialIds="8"/>
-              <Light name="light_red" translation="0.18 0.268 0" rotation="-90 -0 0" nodeId="63" type="point" color="1 0 0.000812173" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
+              <Shape shapeId="3" name="cover_red" translation="0.0708122 0.268 0" rotation="0 -0 -90" clipDistance="100" nodeId="62" materialIds="8"/>
+              <Light name="light_red" translation="0.18 0.268 0" rotation="-90 -0 0" clipDistance="100" nodeId="63" type="point" color="1 0 0.000812173" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
             </TransformGroup>
             <TransformGroup name="2yellow" nodeId="64">
-              <Shape shapeId="4" name="cover_yellow" translation="0.0708122 0 0" rotation="0 -0 -90" nodeId="65" materialIds="9"/>
-              <Light name="light_yellow" translation="0.18 0 0" rotation="-90 -0 0" nodeId="66" type="point" color="1 0.852324 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
+              <Shape shapeId="4" name="cover_yellow" translation="0.0708122 0 0" rotation="0 -0 -90" clipDistance="100" nodeId="65" materialIds="9"/>
+              <Light name="light_yellow" translation="0.18 0 0" rotation="-90 -0 0" clipDistance="100" nodeId="66" type="point" color="1 0.852324 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
             </TransformGroup>
             <TransformGroup name="3green" nodeId="67">
-              <Shape shapeId="5" name="cover_green" translation="0.0708122 -0.268 0" rotation="0 -0 -90" nodeId="68" materialIds="4"/>
-              <Light name="light_green" translation="0.18 -0.268 0" rotation="-90 -0 0" nodeId="69" type="point" color="0.0119623 1 0.0325675" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
+              <Shape shapeId="5" name="cover_green" translation="0.0708122 -0.268 0" rotation="0 -0 -90" clipDistance="100" nodeId="68" materialIds="4"/>
+              <Light name="light_green" translation="0.18 -0.268 0" rotation="-90 -0 0" clipDistance="100" nodeId="69" type="point" color="0.0119623 1 0.0325675" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="3aiBlocker" nodeId="70">
-            <Shape shapeId="6" name="Cube" translation="1 1 1.5" kinematic="true" collisionMask="8447" nodeId="71" materialIds="5" nonRenderable="true" distanceBlending="false"/>
+            <Shape shapeId="6" name="Cube" translation="1 1 1.5" kinematic="true" collisionMask="8447" clipDistance="100" nodeId="71" materialIds="5" nonRenderable="true" distanceBlending="false"/>
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="trafficLight" translation="-2.5 0 -2.5" rotation="-0 90 0" nodeId="72">
-          <TransformGroup name="1collision" translation="0 2.4 0" nodeId="123">
-            <Shape shapeId="1" name="Cylinder" translation="0 -1.4 0" static="true" nodeId="124" materialIds="92" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="2" name="box_green" translation="0 -0.268 0" static="true" nodeId="125" materialIds="6" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="2" name="box_red" translation="0 0.268 0" static="true" nodeId="126" materialIds="6" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="2" name="box_yellow" static="true" nodeId="127" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="1collision" translation="0 2.4 0" nodeId="73">
+            <Shape shapeId="1" name="Cylinder" translation="0 -1.4 0" static="true" clipDistance="100" nodeId="74" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_green" translation="0 -0.268 0" static="true" clipDistance="100" nodeId="75" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_red" translation="0 0.268 0" static="true" clipDistance="100" nodeId="76" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="box_yellow" static="true" clipDistance="100" nodeId="77" materialIds="6" castsShadows="true" receiveShadows="true"/>
           </TransformGroup>
           <TransformGroup name="2lights" translation="0 2.4 0" nodeId="78">
             <TransformGroup name="1red" nodeId="79">
-              <Shape shapeId="3" name="cover_red" translation="0.0708122 0.268 0" rotation="0 -0 -90" nodeId="80" materialIds="8"/>
-              <Light name="light_red" translation="0.18 0.268 0" rotation="-90 -0 0" nodeId="81" type="point" color="1 0 0.000812173" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
+              <Shape shapeId="3" name="cover_red" translation="0.0708122 0.268 0" rotation="0 -0 -90" clipDistance="100" nodeId="80" materialIds="8"/>
+              <Light name="light_red" translation="0.18 0.268 0" rotation="-90 -0 0" clipDistance="100" nodeId="81" type="point" color="1 0 0.000812173" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
             </TransformGroup>
             <TransformGroup name="2yellow" nodeId="82">
-              <Shape shapeId="4" name="cover_yellow" translation="0.0708122 0 0" rotation="0 -0 -90" nodeId="83" materialIds="9"/>
-              <Light name="light_yellow" translation="0.18 0 0" rotation="-90 -0 0" nodeId="84" type="point" color="1 0.852324 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
+              <Shape shapeId="4" name="cover_yellow" translation="0.0708122 0 0" rotation="0 -0 -90" clipDistance="100" nodeId="83" materialIds="9"/>
+              <Light name="light_yellow" translation="0.18 0 0" rotation="-90 -0 0" clipDistance="100" nodeId="84" type="point" color="1 0.852324 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
             </TransformGroup>
             <TransformGroup name="3green" nodeId="85">
-              <Shape shapeId="5" name="cover_green" translation="0.0708122 -0.268 0" rotation="0 -0 -90" nodeId="86" materialIds="4"/>
-              <Light name="light_green" translation="0.18 -0.268 0" rotation="-90 -0 0" nodeId="87" type="point" color="0.0119623 1 0.0325675" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
+              <Shape shapeId="5" name="cover_green" translation="0.0708122 -0.268 0" rotation="0 -0 -90" clipDistance="100" nodeId="86" materialIds="4"/>
+              <Light name="light_green" translation="0.18 -0.268 0" rotation="-90 -0 0" clipDistance="100" nodeId="87" type="point" color="0.0119623 1 0.0325675" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="0.15"/>
             </TransformGroup>
           </TransformGroup>
           <TransformGroup name="3aiBlocker" nodeId="88">
-            <Shape shapeId="6" name="Cube" translation="1 1 1.5" kinematic="true" collisionMask="8447" nodeId="89" materialIds="5" nonRenderable="true" distanceBlending="false"/>
+            <Shape shapeId="6" name="Cube" translation="1 1 1.5" kinematic="true" collisionMask="8447" clipDistance="100" nodeId="89" materialIds="5" nonRenderable="true" distanceBlending="false"/>
           </TransformGroup>
         </TransformGroup>
       </TransformGroup>
