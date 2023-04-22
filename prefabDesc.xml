@@ -19,7 +19,7 @@ Ampeln Syncronisieren sich im Multiplayer.
 
 Changelog 1.1.0.0
 - Grünphase wird jetzt gehalten solange sich ein Fahrzeug im AI Blocker befindet
-- Statische Phasen con 2 Sekunden auf eine gekürzt
+- Statische Phasen von 2 Sekunden auf eine gekürzt
 ]]></de>
 		<en><![CDATA[Script for a traffic light system that regulates the AI traffic and in the future also the AD traffic. 
 Only with green the AI vehicles drive. 
