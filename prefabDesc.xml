@@ -16,6 +16,10 @@ Die Struktur kann man sich in der Beispiel i3d Kreuzung anschauen.
 Dieses Beispiel dient nur als Referenz und ist nicht zur direkten Verwendung in Karten gedacht.
 Ausführlichere Beschreibung in der Skriptdatei.
 Ampeln Syncronisieren sich im Multiplayer.
+
+Changelog 1.1.0.0
+- Grünphase wird jetzt gehalten solange sich ein Fahrzeug im AI Blocker befindet
+- Statische Phasen con 2 Sekunden auf eine gekürzt
 ]]></de>
 		<en><![CDATA[Script for a traffic light system that regulates the AI traffic and in the future also the AD traffic. 
 Only with green the AI vehicles drive. 
@@ -25,7 +29,11 @@ Each phase has as many traffic lights and lights as you need.
 The structure can be seen in the example i3d crossing.
 The example is only for reference and not for direct usage in Maps.
 More detailed description in the script file.
-Trafficlights are synced in Multiplayer.]]></en>
+Trafficlights are synced in Multiplayer.
+
+Changelog 1.1.0.0 
+- Keep green as long as a Vehicle is in one of the ai Blockers
+- Shorten the phases from 2 to 1 second]]></en>
 	</description>
 	<categories>
 		<category>Other</category>

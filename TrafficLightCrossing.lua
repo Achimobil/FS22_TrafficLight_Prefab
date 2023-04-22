@@ -1,11 +1,11 @@
 --[[
 TrafficLightCrossing Script File
 
-Copyright (C) Achimobil 2022
+Copyright (C) Achimobil 2023
 
 Author: Achimobil
-Date: 18.12.2022
-Version: 1.0.0.0
+Date: 22.04.2023
+Version: 1.1.0.0
 
 Contact/Help/Tutorials:
 https://www.achimobil.de/ls-19-22-modding/
@@ -43,6 +43,7 @@ Changelog
 0.2.0.0 First Version
 0.3.0.0 Change Collision of blocking trigger to CollisionFlag.TRIGGER_TRAFFIC_VEHICLE_BLOCKING + CollisionFlag.AI_BLOCKING
 1.0.0.0 Prefab Modhub Version
+1.1.0.0 Keep green as long as a Vehicle is in one of the ai Blockers and short the phases from 2 to 1 second
 ]]
 
 TrafficLightCrossing = {}
@@ -196,6 +197,11 @@ function TrafficLightCrossing:switchToNextPhase()
 	end
 end
 
+function TrafficLightCrossing:aiBlockerOverlapCallback(transformId)
+	if transformId ~= nil then
+		self.oneIsBlocked = true;
+	end
+end
 function TrafficLightCrossing:update(dt)
 	-- print("TrafficLightCrossing.update(" .. tostring(dt) .. ")");
 -- print("loadingPattern")
@@ -210,16 +216,38 @@ function TrafficLightCrossing:update(dt)
 			
 			-- aktuelle phase durchschalten
 			if activePhase.innerPhase == TrafficLightCrossingPhase.GREEN then
-				TrafficLightCrossing.SendState(self.trafficLightId, self.currentPhase, TrafficLightCrossingPhase.ORANGE);
-				self.timeLeft = 2000;
+				-- do not switch to orange when one green is not free
+				self.oneIsBlocked = false;
+				for _, aiBlocker in pairs(activePhase.aiBlockers) do
+					local x, y, z = localToWorld(aiBlocker, 0, 0, 0);
+					local rotX, rotY, rotZ = getWorldRotation(aiBlocker)
+					local extendX, extendY, extendZ = 0.5, 0.5, 0.5
+					local r = 0;
+					local g = 0.8;
+					local b = 0.8;
+					if TrafficLightCrossing.debug then
+						DebugUtil.drawOverlapBox(x, y, z, rotX, rotY, rotZ, extendX, extendY, extendZ, r, g, b)
+					end
+					overlapBox(x, y, z, rotX, rotY, rotZ, extendX, extendY, extendZ, "aiBlockerOverlapCallback", self, CollisionMask.VEHICLE, true, false, true)
+				end
+				
+				if self.oneIsBlocked then
+					self.timeLeft = 100;
+					if TrafficLightCrossing.debug then
+						print("TrafficLightCrossing blocked. Wait for beeing free")
+					end
+				else
+					TrafficLightCrossing.SendState(self.trafficLightId, self.currentPhase, TrafficLightCrossingPhase.ORANGE);
+					self.timeLeft = 1000;
+				end
 			elseif activePhase.innerPhase == TrafficLightCrossingPhase.ORANGE then
 				TrafficLightCrossing.SendState(self.trafficLightId, self.currentPhase, TrafficLightCrossingPhase.RED);
-				self.timeLeft = 2000;
+				self.timeLeft = 1000;
 				-- nächste Phalse starten
 				self:switchToNextPhase()
 			elseif activePhase.innerPhase == TrafficLightCrossingPhase.RED then
 				TrafficLightCrossing.SendState(self.trafficLightId, self.currentPhase, TrafficLightCrossingPhase.REDORANGE);
-				self.timeLeft = 2000;
+				self.timeLeft = 1000;
 			elseif activePhase.innerPhase == TrafficLightCrossingPhase.REDORANGE then
 				TrafficLightCrossing.SendState(self.trafficLightId, self.currentPhase, TrafficLightCrossingPhase.GREEN);
 				self.timeLeft = activePhase.greenMiliSeconds;
