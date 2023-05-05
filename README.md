@@ -3,6 +3,10 @@
 # GitHub
 https://www.farming-simulator.com/mod.php?lang=de&country=de&mod_id=261657&title=fs2022
 
+# Prefab
+Das heißt dieser Mod ist dazu gemacht ihn in eigene Karten zu stecken. Somit ist es ausdrücklich erlaubt ihn zu kopieren.
+Das ändern des Skriptes in jeglicher Form ist dabei untersagt.
+
 # General
 ## DE
 Alles in meinen Mods darf weder komplett noch in Teilen in eigene Mods kopiert oder in irgendeiner anderen Form weiterveröffentlicht werden, es sei denn es wird ausdrücklich erlaubt.
