@@ -4,3 +4,4 @@
 *.zip
 images
 sourceModels
+*.md

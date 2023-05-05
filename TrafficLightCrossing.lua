@@ -8,7 +8,7 @@ Date: 22.04.2023
 Version: 1.1.0.0
 
 Contact/Help/Tutorials:
-https://www.achimobil.de/ls-19-22-modding/
+https://github.com/Achimobil/FS22_TrafficLight_Prefab
 
 Usage:
 Create Traffic Light with these structure. Example has 2 traffic lights in the crossing:
